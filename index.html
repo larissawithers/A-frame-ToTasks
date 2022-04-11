@@ -2,9 +2,10 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-        
+        <meta name="description" content="Model Viewer (VR / AR) • A-Frame">
     </head>
-    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="background-gradient.js"></script>
     <script src="https://rawgit.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
     <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
     <script src="model-viewer.js"></script>
@@ -13,7 +14,7 @@
       <a-scene renderer="colorManagement: true;" model-viewer="gltfModel: #jay; title: jay">
   <a-assets>
     <a-asset-item id="jay"
-      src="Assets/Jay3DModel.gltf"
+      src="assets/Jay3DModel.gltf"
       response-type="arraybuffer" crossorigin="anonymous"></a-asset-item>
 </a-scene>
     </body>
